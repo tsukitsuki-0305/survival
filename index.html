@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="content-language" content="ja">
-<title>逃げるは知識が役に立つ</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-
-
-
-
+	<meta charset="UTF-8">
+	<meta http-equiv="content-language" content="ja">
+	<title>逃げるは知識が役に立つ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <nav>
+    <div class="menuBar">
+      <a class="menuBar__backButton" href='https://tsukitsuki-0305.github.io/'>
+        ← ポートフォリオへ戻る
+      </a>
+    </div>
+  
+    <ul>
+      <li><a href="./index.html">トップページ</a></li>
+      <li><a href="./detail.html">ページ詳細</a></li>
+      <li><a href="./earthquake.html">地震の時</a></li>
+      <li><a href="./fire.html">火災の時</a></li>
+      <li><a href="./mudslide.html">土砂崩れの時</a></li>
+      <li><a href="./rain.html">大雨洪水の時</a></li>
+    </ul>
+  </nav>
+ 
 
-
+	<div id="container">
 		
 
-<div id="container">
-		<nav>
-				<ul>
-						<li><a href="./index.html">トップページ</a></li>
-						<li><a href="./index1.html">ページ詳細</a></li>
-						<li><a href="./earthquake.html">地震の時</a></li>
-						<li><a href="./fire.html">火災の時</a></li>
-						<li><a href="./mudslide.html">土砂崩れの時</a></li>
-						<li><a href="./rain.html">大雨洪水の時</a></li>
-				</ul>
-		</nav>
-
-<header>
-	<h1>
-		<img src="./logo2.jpg" width="658.8"  alt="逃げるは知識が役に立つ" />
-	</h1>
-</header>
+		<header>
+			<h1>
+				<img src="./logo2.jpg" width="658.8" alt="逃げるは知識が役に立つ" />
+			</h1>
+		</header>
 
 
-<div id="contents">
+		<div id="contents">
 
-		<h2>はじめに</h2>
-		<p>
-			災害が起こった時、命を守るためにどうやって避難しよう？と考える人が多いと思います。<br>
-			このサイトは、下の地図をもとに災害時の避難について説明していくサイトとなっています。<br>
-			真ん中あたりにある赤い「家」にいることを仮定して<br>
-			例をもとに災害ごとに避難方法を考えていこう、というものです。<br>
-		</p>
-		
-		
-		<div id="image">
-			<p><img src="./images/map.jpg" width="589.4" height="416.5" alt="公園"><br><br></p>
+			<h2>はじめに</h2>
+			<p>
+				災害が起こった時、命を守るためにどうやって避難しよう？と考える人が多いと思います。<br>
+				このサイトは、下の地図をもとに災害時の避難について説明していくサイトとなっています。<br>
+				真ん中あたりにある赤い「家」にいることを仮定して<br>
+				例をもとに災害ごとに避難方法を考えていこう、というものです。<br>
+			</p>
+
+
+			<div id="image">
+				<p><img src="./images/map.jpg" width="589.4" height="416.5" alt="公園"><br><br></p>
+			</div>
+
+
+			<div class="slider">
+				<img src="images/river1-1.jpg" alt="川">
+				<img src="images/4Ura1-1.jpg" alt="裏山">
+				<img src="images/2Ura1-1.jpg" alt="裏山">
+				<img src="images/park-1.jpg" alt="公園">
+			</div>
+
+
+
 		</div>
-		
 
-<div class="slider">
-		<img src="images/river1-1.jpg"  alt="川">
-		<img src="images/4Ura1-1.jpg" alt="裏山">
-		<img src="images/2Ura1-1.jpg" alt="裏山">
-		<img src="images/park-1.jpg" alt="公園">
-</div>
+		<footer>
+			<hr>
+			<address>OKAMURA Hazuki</address>
+			<p><small>本ページは専修大学ネットワーク情報学部コンテンツデザイン演習2018年度の夏期課題として制作されたものです。</small></p>
+		</footer>
 
+	</div>
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-</div>
-
-<p>>><a href="../../index.html">岡村葉月のCD応用演習ページ</a></p>
-
-<footer>
-	<hr>
-	<address>NE290213G OKAMURA Hazuki</address>
-	<p><small>本ページは専修大学ネットワーク情報学部コンテンツデザイン演習2018年度の夏期課題として制作されたものです。</small></p>
-</footer>
-
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 5000,
-            });
-        });
-</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+	</script>
 
 
 </body>
+
 </html>

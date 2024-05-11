@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="content-language" content="ja">
-<title>逃げるは知識が役に立つ</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="content-language" content="ja">
+	<title>逃げるは知識が役に立つ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 5000,
-            });
-        });
-</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+	</script>
 
 
 </head>
 
 <body>
-
-
-<div id="container">
-
-		<nav>
-				<ul>
-						<li><a href="./index.html">トップページ</a></li>
-						<li><a href="./index1.html">ページ詳細</a></li>
-						<li><a href="./earthquake.html">地震の時</a></li>
-						<li><a href="./fire.html">火災の時</a></li>
-						<li><a href="./mudslide.html">土砂崩れの時</a></li>
-						<li><a href="./rain.html">大雨洪水の時</a></li>
-				</ul>
-		</nav>
-
-<header>
-	<h1>
-			<img src="./logo2.jpg" width="658.8" alt="逃げるは知識が役に立つ" />
-	</h1>
-</header>
-
-<div id="contents">
-
-<h2>大雨洪水の時はどう逃げる？</h2>
-
-<p>
-	大雨洪水の場合、どこに避難すれば良いでしょうか。<br>
-	それは標高が高い避難所です。<br>
-	一番近い避難所が自分のいるところより低い場所にあった場合、<br>
-	むやみにそこに行ってはいけません。<br>
-	浸水している可能性もありますし、何より移動の際が危険です。<br>
-	川のように水が流れる道を歩くのは危険すぎます。<br>
-	大雨の際は、標高が高く浸水していない場所を選んで避難しましょう。</p>
-	<div id="image">
-			<img src="./images/parkSpace.jpg" width="600" height="400" alt="公園" /><br>
-			<small>※地名は隠してあります。</small>
+	<nav>
+		<div class="menuBar">
+			<a class="menuBar__backButton" href='https://tsukitsuki-0305.github.io/'>
+				← ポートフォリオへ戻る
+			</a>
 		</div>
-		<p>
-	下の地図の右側は、標高が高いほど濃いオレンジ色で表しています。<br>
-	この場合、近いからと言って中学校や小学校に避難してはいけません。<br>
-	標高が低いため浸水する可能性があり、実際に過去に浸水しています。<br>
-	大雨洪水の場合は公園側に避難するのが良いでしょう。<br>
-	
-</p>
+		<ul>
+			<li><a href="./index.html">トップページ</a></li>
+			<li><a href="./detail.html">ページ詳細</a></li>
+			<li><a href="./earthquake.html">地震の時</a></li>
+			<li><a href="./fire.html">火災の時</a></li>
+			<li><a href="./mudslide.html">土砂崩れの時</a></li>
+			<li><a href="./rain.html">大雨洪水の時</a></li>
+		</ul>
+	</nav>
 
-<div id="image">
-		<img src="./images/mapRain.jpg" width="589.4" height="416.5" alt="公園">
+
+	<div id="container">
+
+		<header>
+			<h1>
+				<img src="./logo2.jpg" width="658.8" alt="逃げるは知識が役に立つ" />
+			</h1>
+		</header>
+
+		<div id="contents">
+
+			<h2>大雨洪水の時はどう逃げる？</h2>
+
+			<p>
+				大雨洪水の場合、どこに避難すれば良いでしょうか。<br>
+				それは標高が高い避難所です。<br>
+				一番近い避難所が自分のいるところより低い場所にあった場合、<br>
+				むやみにそこに行ってはいけません。<br>
+				浸水している可能性もありますし、何より移動の際が危険です。<br>
+				川のように水が流れる道を歩くのは危険すぎます。<br>
+				大雨の際は、標高が高く浸水していない場所を選んで避難しましょう。</p>
+			<div id="image">
+				<img src="./images/parkSpace.jpg" width="600" height="400" alt="公園" /><br>
+				<small>※地名は隠してあります。</small>
+			</div>
+			<p>
+				下の地図の右側は、標高が高いほど濃いオレンジ色で表しています。<br>
+				この場合、近いからと言って中学校や小学校に避難してはいけません。<br>
+				標高が低いため浸水する可能性があり、実際に過去に浸水しています。<br>
+				大雨洪水の場合は公園側に避難するのが良いでしょう。<br>
+
+			</p>
+
+			<div id="image">
+				<img src="./images/mapRain.jpg" width="589.4" height="416.5" alt="公園">
+			</div>
+
+
+		</div>
+
+		<p>>><a href="./index.html">トップページ</a></p>
+
+		<footer>
+			<hr>
+			<address>OKAMURA Hazuki</address>
+			<p><small>本ページは専修大学ネットワーク情報学部コンテンツデザイン演習2018年度の夏期課題として制作されたものです。</small></p>
+
+		</footer>
+
 	</div>
 
-
-</div>
-
-<p>>><a href="../../index.html">岡村葉月のCD応用演習ページ</a></p>
-
-<footer>
-	<hr>
-	<address>NE290213G OKAMURA Hazuki</address>	
-	<p><small>本ページは専修大学ネットワーク情報学部コンテンツデザイン演習2018年度の夏期課題として制作されたものです。</small></p>
-
-</footer>
-
-</div>
-
 </body>
+
 </html>

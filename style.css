@@ -7,22 +7,23 @@
 
 body {
 	margin: 0;
-    padding: 0;
-	font-family: 'ヒラギノ角ゴシック','Hiragino Sans','ＭＳ ゴシック',sans-serif;
+	padding: 0;
+	font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
 	background-image: url(back.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
-#container{
+
+#container {
 	width: 800px;
-	margin:0 auto;
+	margin: 0 auto;
 }
 
-#contents{
+#contents {
 	background-color: rgba(255, 255, 255, 0.66);
 }
 
-#image{
+#image {
 	text-align: center;
 }
 
@@ -33,23 +34,23 @@ body {
   Text Module
 ---------------------------------------*/
 h1 {
-	font-size:200%;
-	text-align:center;
+	font-size: 200%;
+	text-align: center;
 	background-color: rgb(115, 255, 0);
-	background-color: rgb(255,255,255);
-	margin-top: 4rem;
+	background-color: rgb(255, 255, 255);
+	margin-top: 8rem;
 }
 
 
 h2 {
-	margin-top:20px;
-	margin-bottom:20px;
-	padding:5px 15px;
-    background:rgba(255, 255, 255, 0.8);
-    border-left:#27e0b8 8px solid;
-    font-size: 160%;
-    font-weight: bold;
-    color:#000000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px 15px;
+	background: rgba(255, 255, 255, 0.8);
+	border-left: #27e0b8 8px solid;
+	font-size: 160%;
+	font-weight: bold;
+	color: #000000;
 }
 
 
@@ -69,7 +70,8 @@ table {
 	margin: 1rem 3rem;
 }
 
-th, td {
+th,
+td {
 	border: thin ridge #2f4f4f;
 	padding: 0.1rem 0.5rem;
 }
@@ -82,7 +84,7 @@ th {
 p {
 	padding: 1rem 2rem;
 	line-height: 1.8rem;
-	
+
 }
 
 ol {
@@ -90,7 +92,7 @@ ol {
 }
 
 ul {
-    padding: 1rem 4rem;
+	padding: 1rem 4rem;
 }
 
 
@@ -107,19 +109,19 @@ a {
 }
 
 a:link {
-	color:#ff7f50;
-	text-decoration:none;
-	
+	color: #ff7f50;
+	text-decoration: none;
+
 }
 
 a:visited {
-	color:navy;
-	text-decoration:none;
+	color: navy;
+	text-decoration: none;
 }
 
 a:hover {
-	color:#f6f;
-	text-decoration:none;
+	color: #f6f;
+	text-decoration: none;
 }
 
 .button {
@@ -130,30 +132,35 @@ a:hover {
 	color: #fff;
 	line-height: 50px;
 	height: 50px;
-  }
-  .button:hover {
+}
+
+.button:hover {
 	background-color: #fff;
 	border-color: #59b1eb;
 	color: #59b1eb;
-  }
-  .button::before,
-  .button::after {
+}
+
+.button::before,
+.button::after {
 	top: 0;
 	width: 50%;
 	height: 100%;
-	
-  }
-  .button::before {
+
+}
+
+.button::before {
 	right: 0;
-  }
-  .button::after {
+}
+
+.button::after {
 	left: 0;
-  }
-  .button:hover::before,
-  .button:hover::after {
+}
+
+.button:hover::before,
+.button:hover::after {
 	width: 0;
 	background-color: #59b1eb;
-  }
+}
 
 
 
@@ -163,56 +170,61 @@ a:hover {
 ---------------------------------------*/
 
 
-nav{
-	margin-bottom:50px;
-	margin-top: -4rem;
+nav {
+	margin-bottom: 50px;
+	margin-top: -8rem;
 	position: fixed;
-	
+    width: 100%;
 }
 
 
-nav ul{
-	font-size:200%;
-	height:100%;
-	margin:0;
-	padding:0;
-	line-height:100%;
-	list-style-type:none;
+nav ul {
+	font-size: 200%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+	list-style-type: none;
+	width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgb(218, 242, 250);
 }
 
 
-nav ul li{
-	padding:0rem;
-	text-align:center;
-	font-size:14px;
+nav ul li {
+	padding: 0rem;
+	text-align: center;
+	font-size: 14px;
 	float: left;
 	background-color: rgb(218, 242, 250);
 	width: 133.4px;
 }
 
-nav ul li a{
+nav ul li a {
 
-	padding:8px 20px;
+	padding: 8px 20px;
 	display: block;
-	position:relative;
-	color:#000000;
-	text-decoration:none;
-	
+	position: relative;
+	color: #000000;
+	text-decoration: none;
+
 }
 
-nav ul li a:link{
-	color:#696969;
-	text-decoration:none;
+nav ul li a:link {
+	color: #696969;
+	text-decoration: none;
 }
 
-nav ul li a:visited{
-	color:#000;
-	text-decoration:none;
+nav ul li a:visited {
+	color: #000;
+	text-decoration: none;
 }
-nav ul li a:hover{
-	color:#494848;
+
+nav ul li a:hover {
+	color: #494848;
 	background-color: rgb(81, 168, 250);
-	text-decoration:none;
+	text-decoration: none;
 }
 
 
@@ -223,7 +235,8 @@ nav ul li a:hover{
 .menu ul {
 	height: 1px;
 	min-height: 1px;
-	/*¥*//*/
+	/*¥*/
+	/*/
 	height: 1px;
 	overflow: hidden;
 	/**/
@@ -237,4 +250,31 @@ nav ul li a:hover{
 	clear: both;
 }
 
+.menuBar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding-left: 2rem;
+	background-color: #EEFAFF;
+	/* position: fixed; */
+}
 
+@media screen and (max-width: 767px) {
+	.menuBar {
+		padding-left: 1rem;
+	}
+}
+
+.menuBar__backButton {
+	border: 1px solid #ccc;
+	border-radius: 2rem;
+	background-color: #fff;
+	height: 35px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 0.9rem;
+	color: #3d3d3d;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
