@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+
+/*--------------------------------------
+  Structure Module
+---------------------------------------*/
+
+body {
+	margin: 0;
+    padding: 0;
+	font-family: 'ヒラギノ角ゴシック','Hiragino Sans','ＭＳ ゴシック',sans-serif;
+	background-image: url(back.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#container{
+	width: 800px;
+	margin:0 auto;
+}
+
+#contents{
+	background-color: rgba(255, 255, 255, 0.66);
+}
+
+#image{
+	text-align: center;
+}
+
+
+
+
+/*--------------------------------------
+  Text Module
+---------------------------------------*/
+h1 {
+	font-size:200%;
+	text-align:center;
+	background-color: rgb(115, 255, 0);
+	background-color: rgb(255,255,255);
+	margin-top: 4rem;
+}
+
+
+h2 {
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:5px 15px;
+    background:rgba(255, 255, 255, 0.8);
+    border-left:#27e0b8 8px solid;
+    font-size: 160%;
+    font-weight: bold;
+    color:#000000;
+}
+
+
+
+h3 {
+	font-size: 120%;
+	margin: 1rem 2rem;
+}
+
+h3:first-letter {
+	color: #ff0080;
+	font-size: 150%;
+}
+
+table {
+	border: medium solid #2f4f4f;
+	margin: 1rem 3rem;
+}
+
+th, td {
+	border: thin ridge #2f4f4f;
+	padding: 0.1rem 0.5rem;
+}
+
+th {
+	color: #fff;
+	background-color: #2e8b57;
+}
+
+p {
+	padding: 1rem 2rem;
+	line-height: 1.8rem;
+	
+}
+
+ol {
+	padding: 1rem 4rem;
+}
+
+ul {
+    padding: 1rem 4rem;
+}
+
+
+address {
+	padding: 1rem 2rem;
+	font-weight: bold;
+	font-style: normal;
+	text-align: right;
+	font-size: small;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color:#ff7f50;
+	text-decoration:none;
+	
+}
+
+a:visited {
+	color:navy;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#f6f;
+	text-decoration:none;
+}
+
+.button {
+	position: relative;
+	z-index: 2;
+	background-color: rgb(255, 238, 250);
+	border: 1px solid rgb(255, 14, 175);
+	color: #fff;
+	line-height: 50px;
+	height: 50px;
+  }
+  .button:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+  }
+  .button::before,
+  .button::after {
+	top: 0;
+	width: 50%;
+	height: 100%;
+	
+  }
+  .button::before {
+	right: 0;
+  }
+  .button::after {
+	left: 0;
+  }
+  .button:hover::before,
+  .button:hover::after {
+	width: 0;
+	background-color: #59b1eb;
+  }
+
+
+
+
+/*--------------------------------------
+  MENU 
+---------------------------------------*/
+
+
+nav{
+	margin-bottom:50px;
+	margin-top: -4rem;
+	position: fixed;
+	
+}
+
+
+nav ul{
+	font-size:200%;
+	height:100%;
+	margin:0;
+	padding:0;
+	line-height:100%;
+	list-style-type:none;
+}
+
+
+nav ul li{
+	padding:0rem;
+	text-align:center;
+	font-size:14px;
+	float: left;
+	background-color: rgb(218, 242, 250);
+	width: 133.4px;
+}
+
+nav ul li a{
+
+	padding:8px 20px;
+	display: block;
+	position:relative;
+	color:#000000;
+	text-decoration:none;
+	
+}
+
+nav ul li a:link{
+	color:#696969;
+	text-decoration:none;
+}
+
+nav ul li a:visited{
+	color:#000;
+	text-decoration:none;
+}
+nav ul li a:hover{
+	color:#494848;
+	background-color: rgb(81, 168, 250);
+	text-decoration:none;
+}
+
+
+
+
+/* ClearFix */
+
+.menu ul {
+	height: 1px;
+	min-height: 1px;
+	/*¥*//*/
+	height: 1px;
+	overflow: hidden;
+	/**/
+}
+
+.menu ul :after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+
