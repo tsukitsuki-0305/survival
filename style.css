@@ -84,7 +84,7 @@ th {
 p {
 	padding: 1rem 2rem;
 	line-height: 1.8rem;
-
+	margin: 0;
 }
 
 ol {
@@ -174,7 +174,7 @@ nav {
 	margin-bottom: 50px;
 	margin-top: -8rem;
 	position: fixed;
-    width: 100%;
+	width: 100%;
 }
 
 
@@ -186,9 +186,9 @@ nav ul {
 	line-height: 100%;
 	list-style-type: none;
 	width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    background-color: rgb(218, 242, 250);
+	display: inline-flex;
+	justify-content: center;
+	background-color: rgb(218, 242, 250);
 }
 
 
@@ -259,12 +259,6 @@ nav ul li a:hover {
 	/* position: fixed; */
 }
 
-@media screen and (max-width: 767px) {
-	.menuBar {
-		padding-left: 1rem;
-	}
-}
-
 .menuBar__backButton {
 	border: 1px solid #ccc;
 	border-radius: 2rem;
@@ -277,4 +271,83 @@ nav ul li a:hover {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		width: 100vw;
+	}
+
+	nav {
+		margin-top: 0;
+		width: 100vw;
+	}
+
+	nav ul {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	nav ul li {
+		width: 33%;
+		font-size: 15px;
+	}
+
+	.menuBar {
+		padding-left: 1rem;
+	}
+
+	#container {
+		width: 90%;
+		padding: 1rem;
+	}
+
+	.logo_pic {
+		width: 100%;
+
+	}
+
+	.contents__slider {
+		width: 300px;
+	}
+
+	.map_pic {
+		width: 100%;
+		height: auto;
+		padding: 1rem 0;
+	}
+
+	h1 {
+		margin-top: 10rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 1.3rem;
+	}
+
+	p {
+		padding: 1rem;
+	}
+
+	.image__pic {
+		width: calc(100% - 2rem);
+		height: auto;
+		padding: 1rem;
+	}
+
+	ul {
+		margin: 0;
+		padding: 1rem 2rem;
+	}
+
+	li {
+		word-break: break-all;
+	}
+
+	address {
+		padding: 0.25rem 1rem;
+	}
 }
