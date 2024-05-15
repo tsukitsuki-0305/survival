@@ -290,7 +290,11 @@ nav ul li a:hover {
 
 	nav ul li {
 		width: 33%;
-		font-size: 15px;
+		font-size:  0.95rem;;
+		padding: 0.5rem 0;
+	}
+	nav ul li a {
+		padding: 0;
 	}
 
 	.menuBar {
